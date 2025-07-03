@@ -1,0 +1,20 @@
+<header class="w-100">
+  <div class="navbar navbar-top navbar-expand-md header py-2 px-3 bg-erp-white">
+    <div class="col-1">
+      <app-toggler (showSidebar)="toggleShowSidebar($event)"></app-toggler>
+    </div>
+    <!-- <div class="col">
+      <app-header-search></app-header-search>
+    </div>  -->
+
+    <div class="col d-flex justify-content-end align-items-center">
+      <app-notifications></app-notifications>
+      <!-- <app-admin></app-admin> -->
+      <app-shopping-cart></app-shopping-cart>
+    </div>
+
+    <select #langSelect (change)="changeLanguage(langSelect.value)">
+      <option *ngFor="let lang of langs">{{ lang }}</option>
+    </select>
+  </div>
+</header>

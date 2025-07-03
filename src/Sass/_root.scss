@@ -1,0 +1,148 @@
+////////////////////////////////////////////////
+// GLOBAL STYLING, independent from B5 syntax //
+////////////////////////////////////////////////
+
+// Here, you can define global SASS/CSS styles which will apply on the whole app
+
+/*
+Example:
+
+// global vars
+$root-bg: papayawhip;
+
+// global styles from shell (above Angular's component's scope)
+:root {
+  background-color: darken($root-bg, 10); #222222
+  body {
+    background-color: $root-bg;
+    user-select: none;
+  }
+}
+*/
+
+////////////////////
+// GLOBAL STYLING //
+////////////////////
+
+// GLOBAL ROOT lEVEL defaults //
+
+// FONTS //
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(/assets/fonts/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// TYPOGRAPHY //
+
+body > * {
+  font-family: "Raleway", sans-serif; // default font
+  font-size: 16px;
+}
+
+body {
+  background-color: $erp-silver; // default background
+}
+
+// headings, header, footer
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+// .btn, .navbar --> _overrides.scss
+
+footer {
+  font-size: 10px;
+  background-color: $erp-black; // default bg-color
+}
+
+// LINKS //
+
+// ALL <a> style is defined here (for normal, not-Bootrap links)
+// but also in override.scss (those belonging to B5 classes, like .navlink, etc)
+a:not(.navbar-brand):not(.nav-link):not(.dropdown-item):not(.sidebar-link) {
+  cursor: pointer;
+  display: inline-block;
+  color: $erp-blue;
+  text-decoration: none;
+  &::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: $erp-blue;
+  }
+  &:hover::after {
+    width: 100%;
+    transition: width 0.75s;
+  }
+}
+
+footer a {
+  color: $erp-white !important;
+  &::after {
+    background: $erp-white !important;
+  }
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+// UTILITY //
+.z-2000 {
+  z-index: 2000;
+}
+
+// OTHER //
+.btn-erp-delete {
+  background-color: #dd5d56;
+}
+
+.btn-erp-general {
+  background-color: #4e78bb;
+}
+
+/*
+  
+  NOTE: How Bootstrap 5 "custom-themes" syntax works...
+  
+  Wanna use "#dd5d56" as text, border, button, solid button, background?
+
+  B5 class => "text-erp-red", "border border-erp-red", "btn btn-erp-red", "btn btn-outline-erp-red", "bg-erp-red", etc.
+
+*/
+
+/*
+INFO: 09/03/2021
+FIX MODAL BACKDROP
+https://weblog.west-wind.com/posts/2016/sep/14/bootstrap-modal-dialog-showing-under-modal-background
+*/
+.z-2000 {
+  z-index: 900 !important; // z-index: 2000 is too hight and remains above the modals
+}
+
+.modal-backdrop {
+  display:none !important; // workaround for Modal's under backdrop
+}

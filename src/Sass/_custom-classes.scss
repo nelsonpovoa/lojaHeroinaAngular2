@@ -1,0 +1,85 @@
+/*
+  We can create new B5 classes adding those to the $utilities B5 variable,
+  defined in partial SASS, with path: node_modules/bootstrap/scss/utilities
+  We can also midify existend map $utilities
+  You have some examples below
+*/
+
+/*
+$utilities: map-merge(
+    $utilities,
+    (
+      // A. syntax for brand-new custom class (not included in default $utilities)
+      "opacity":
+      (
+        property: opacity,
+        // specify responsive if wanted
+        responsive: true,
+        // new class name
+        class: op,
+        // setup values
+        values:
+        (
+          0: 0,
+          25: 0.25,
+          50: 0.5,
+          75: 0.75,
+          100: 1,
+        ),
+      ),
+      // B. syntax to modify B5 native classes (already responsive)
+      "text-align":
+      map-merge(
+          map-get($utilities, "text-align"),
+          (
+            // add values
+            values:
+            map-merge(
+                map-get(map-get($utilities, "text-align"), "values"),
+                (
+                  justify: justify,
+                )
+            )
+          )
+      ),
+      // C. syntax to add responsive behaviour to B5 native classes
+      "background-color":
+      map-merge(
+          map-get($utilities, "background-color"),
+          (
+            // add responsive
+            responsive: true,
+          )
+      )
+    )
+);
+*/
+
+///////////////////////////////////////////////////////
+// CREATE NEW B5-syntaxed or MODIFY B5-ready CLASSES //
+///////////////////////////////////////////////////////
+
+// Don't modify previuos commented example lines!
+
+// Write your code just below.
+
+$utilities: map-merge(
+  $utilities,
+  (
+    // extend B5 text-...
+    "text-align":
+      map-merge(
+        map-get($utilities, "text-align"),
+        (
+          // add values
+          values:
+            map-merge(
+              map-get(map-get($utilities, "text-align"), "values"),
+              (
+                justify: justify,
+              )
+            )
+        )
+      )
+  )
+);
