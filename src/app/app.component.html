@@ -1,7 +1,45 @@
 
-<fa-icon [icon]="faCoffee"></fa-icon>
+<!-- <fa-icon [icon]="faCoffee"></fa-icon> -->
 
+<!-- <app-navbar></app-navbar> -->
 
-<router-outlet />
+<!-- <router-outlet /> -->
 
+<div class="container-fluid p-0">
+    <!-- DON'T REMOVE THE MODE -->
+    <h5 class="text-erp-red">{{ mode }}</h5>
 
+    <!-- SIDEBAR -->
+    <div class="position-sticky top-0 d-flex">
+        <aside [ngClass]="{
+        'bg-erp-black': true,
+        'w-sidebar-collapsed': true,
+        'w-sidebar-open': !sidebar
+      }" [hidden]="token.length == 0 || !showSidebar">
+            <!-- <app-role-sidebar [_role]="role" (stateSidebar)="toggleSidebar($event)">
+            </app-role-sidebar> -->
+        </aside>
+        <main class="w-100">
+            <!-- HEADER -->
+            <!-- <div class="container-fluid p-0 position-sticky top-0 z-2000" *ngIf="token.length > 0; else adminNavbar">
+                <app-header
+                    ></app-header>
+            </div> -->
+
+            <!-- <ng-template #adminNavbar>
+                <app-navbar></app-navbar>
+            </ng-template> -->
+
+            <!-- ROUTES -->
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <app-footer></app-footer>
+
+    <!-- TODO: to be removed in production - DEVELOPERS VIEWS -->
+    <!-- <div *ngIf="mode !== ''">
+        <app-dev-navbar></app-dev-navbar>
+    </div> -->
+</div>
