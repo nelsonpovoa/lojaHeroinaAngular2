@@ -5,6 +5,7 @@ import { SignupComponent } from './views/signup/signup.component';
 import { LicenceComponent } from './components/footer/licence/licence.component';
 import { LoginComponent } from './views/login/login.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { TermsComponent } from './views/terms/terms.component';
 
 export const routes: Routes = [
 
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'licence', component: LicenceComponent },
   { path: 'log-in', component: LoginComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'terms', component: TermsComponent },
 ];

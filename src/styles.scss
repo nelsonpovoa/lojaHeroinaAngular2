@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+$utilities-colors: (
+  "custom": #93b938
+);
 
+
+//@import '../node_modules/bootstrap/scss/functions';
+//@import '../node_modules/bootstrap/scss/variables';
 
 
 /////////////////////////
@@ -18,6 +24,10 @@
 
 // default variables
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 3. Maps (como utilities)
+@import "../node_modules/bootstrap/scss/maps";
 
 // 1.2. extra theme-colors modify
 @import "./sass/theme-extra";
@@ -107,11 +117,13 @@ HELP: https://css-tricks.com/box-sizing/
 
 
 
+@import "bootstrap/scss/bootstrap";
+
 /* Importing Bootstrap SCSS file. */
 //@import 'bootstrap/scss/bootstrap';
 //@import '~bootstrap/scss/bootstrap';
 
-@import '~bootstrap/scss/bootstrap';
+//@import '../node_modules/bootstrap/scss/bootstrap';
 
 /* Importing ngx-toastr styles */
 //@import 'ngx-toastr/toastr';
