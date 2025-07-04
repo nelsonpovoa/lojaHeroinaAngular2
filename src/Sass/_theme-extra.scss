@@ -19,9 +19,12 @@ $extra-colors: (
   "erp-pink": $erp-pink,
 );
 
-// 2. Previsous custom colors will be added top B5 palette.
+// 2. Previous custom colors will be added to B5 palette.
 $theme-colors: map-merge($theme-colors, $extra-colors);
 
+$utilities-border-colors: ("erp-black": $erp-black);
+$utilities-border-subtle: ("erp-black": $erp-black);
+$negative-spacers: ("erp-black": $erp-black);
 ////////////////////////////////////
 // REMOVE B5 main color variables //
 ////////////////////////////////////

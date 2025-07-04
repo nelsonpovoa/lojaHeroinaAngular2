@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import localePT from '@angular/common/locales/pt';
 
+
 registerLocaleData(localePT);
 
 ////////////////////////////
@@ -70,12 +71,13 @@ import {
 import { Navbar } from "./components/navbar/navbar"; // regular
 import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from "./components/footer/footer.component";
-import { Header } from "./components/header/header";
+import { Header as HeaderComponent } from './components/header/header';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FontAwesomeModule, FooterComponent, CommonModule, Header, Navbar],
+  imports: [RouterOutlet, FontAwesomeModule, Navbar,
+    CommonModule, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 

@@ -299,14 +299,14 @@
   "employees": "empleados",
   "clock": "horario",
   "contact-page":{
-    "page-head":"Contacta con nosotr@s!",
+    "page-head":"Entre em contacto connosco!",
     "form":{
-      "title": "Alguna duda?",
-      "name":"Nombre",
-      "email":"Correo electrónico",
-      "message":"Mensaje",
-      "news-letter":"Me gustaría recibir vuestro newsletter",
-      "terms":"He leído y acepto los términos y condiciones",
+      "title": "Alguma dúvida?",
+      "name":"Nome",
+      "email":"Correio electrónico",
+      "message":"Mensagem",
+      "news-letter":"Gostaría de recber a vossa newsletter",
+      "terms":"Lí e aceito os termos e condições",
       "button": "Enviar!"
     },
     "pageNotFound": {

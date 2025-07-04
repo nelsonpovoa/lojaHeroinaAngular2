@@ -1,0 +1,44 @@
+#adminNavbar,
+form {
+  max-width: 576px; // xs
+}
+
+#loginAlert {
+  max-width: 320px; // xxs
+}
+
+button a {
+  &::after {
+    background: inherit !important;
+  }
+}
+
+/*
+.btn-erp-blue:hover {
+  color: #000;
+  background-color: #698cc5;
+  border-color: #6086c2;
+}
+.btn:hover {
+  color: #212529;
+}
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-erp-blue:hover {
+  color: #000;
+  background-color: #698cc5;
+  border-color: #6086c2;
+}
+.btn:hover {
+  color: #212529;
+}
+
+*/
+
+

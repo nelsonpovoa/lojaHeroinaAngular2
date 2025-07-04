@@ -21,14 +21,14 @@
         </aside>
         <main class="w-100">
             <!-- HEADER -->
-            <!-- <div class="container-fluid p-0 position-sticky top-0 z-2000" *ngIf="token.length > 0; else adminNavbar">
-                <app-header
+            <div class="container-fluid p-0 position-sticky top-0 z-2000" *ngIf="token.length > 0; else adminNavbar">
+                <app-header [_showSidebar]="showSidebar" (showSidebar)="toggleShowSidebar($event)"
                     ></app-header>
-            </div> -->
+            </div>
 
-            <!-- <ng-template #adminNavbar>
+            <ng-template #adminNavbar>
                 <app-navbar></app-navbar>
-            </ng-template> -->
+            </ng-template>
 
             <!-- ROUTES -->
             <router-outlet></router-outlet>

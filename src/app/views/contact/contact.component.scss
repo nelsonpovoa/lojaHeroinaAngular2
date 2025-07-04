@@ -1,0 +1,40 @@
+.map-container2 {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+}
+
+.map-frame {
+border: 2px solid black;
+height: 100%;
+}
+
+.map {
+    min-height: 200px;
+}
+form{
+    margin-bottom: 100px;
+    .center-contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form-btn{
+        background-color: #4e78bb;
+        color: #fff;
+        font-weight: 500;
+    }
+    .form-check-input{
+        margin-right: 5px;
+    }
+}
+
+.btn {
+  background-color: #4E78BB;
+  color:#FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
