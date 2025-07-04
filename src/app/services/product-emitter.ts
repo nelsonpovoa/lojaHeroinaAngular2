@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
+import { Product } from '../models/Product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductEmitterService {
 
-  subject = new Subject();
+  subject = new Subject<Product>();
 
   constructor() {}
 
@@ -14,7 +15,7 @@ export class ProductEmitterService {
     this.subject.next(product); //Triggering an event
   }
 
-  getDataProduct() {
+  getDataProduct() : Observable<Product>{
     return this.subject.asObservable();
   }
 }

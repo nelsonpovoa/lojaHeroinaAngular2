@@ -1,1 +1,71 @@
-<p>shopping-cart works!</p>
+<div class="d-flex align-items-center">
+  <div class="dropdown">
+    <a
+      class="nav-link shopping-cart-icon"
+      id="cartBasket"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+      href=""
+    >
+      <fa-icon
+        [icon]="faShoppingCart"
+        size="lg"
+        class="{{ iconClass }}"
+      ></fa-icon>
+
+      <span
+        *ngIf="cartItems.length > 0"
+        id="counter"
+        class="shopping-cart-counter d-flex align-items-center justify-content-center {{
+          badgeClass
+        }} newQuantity2"
+        >{{ cartItems.length }}</span
+      >
+    </a>
+    <div
+      class="dropdown-menu dropdown-menu-end menu-box shopping-cart-box"
+      aria-labelledby="cartBasket"
+      (click)="dropdownClickControl($event)"
+    >
+      <div class="shopping-cart">
+        <ng-container *ngIf="cartItems.length > 0; else emptyCartTemplate">
+          <div class="shopping-cart-header">
+            <div class="shopping-cart-total">
+              <span class="p-r-05">Total:</span>
+              <span class="text-highlight total"
+                >{{ cartTotal | number: "1.2-2" }} €</span
+              >
+            </div>
+          </div>
+          <!-- /.shopping-cart-header -->
+          <ul class="shopping-cart-items">
+            <li *ngFor="let item of cartItems" class="clearfix">
+              <app-cart-item
+                [cartItem]="item"
+                (removeAction)="removeItem($event)"
+                (UpdateQuantity)="upDateQty($event)"
+              ></app-cart-item>
+            </li>
+          </ul>
+
+          <!-- /.shopping-cart-items -->
+
+          <div class="shopping-cart-buttons">
+            <button
+              class="btn btn-block btn-erp-blue text-erp-white"
+              (click)="checkoutRoute()"
+            >
+              Checkout
+            </button>
+          </div>
+        </ng-container>
+        <ng-template #emptyCartTemplate>
+          <div class="text-center text-bold">Cart is empty</div>
+        </ng-template>
+      </div>
+      <!-- /.shopping-cart -->
+    </div>
+  </div>
+</div>
