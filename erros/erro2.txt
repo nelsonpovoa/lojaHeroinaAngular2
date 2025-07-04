@@ -1,0 +1,318 @@
+
+
+PS C:\MyCard\Angular-wksp\lojaHeroina> npm start
+
+> loja-heroina@0.0.0 start
+> ng serve --host 0.0.0.0 --port 4200
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+
+Application bundle generation failed. [1.877 seconds]
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:37:10:
+      37 │   @return red($value), green($value), blue($value);
+         ╵           ^
+
+
+  red() is deprecated. Suggestion:
+
+  color.channel($color, "red", $space: rgb)
+
+  More info: https://sass-lang.com/d/color-functions
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:37:23:
+      37 │   @return red($value), green($value), blue($value);
+         ╵                        ^
+
+
+  green() is deprecated. Suggestion:
+
+  color.channel($color, "green", $space: rgb)
+
+  More info: https://sass-lang.com/d/color-functions
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:185:9:
+      185 │     "r": red($color),
+          ╵          ^
+
+
+  red() is deprecated. Suggestion:
+
+  color.channel($color, "red", $space: rgb)
+
+  More info: https://sass-lang.com/d/color-functions
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:186:9:
+      186 │     "g": green($color),
+          ╵          ^
+
+
+  green() is deprecated. Suggestion:
+
+  color.channel($color, "green", $space: rgb)
+
+  More info: https://sass-lang.com/d/color-functions
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:187:9:
+      187 │     "b": blue($color)
+          ╵          ^
+
+
+  blue() is deprecated. Suggestion:
+
+  color.channel($color, "blue", $space: rgb)
+
+  More info: https://sass-lang.com/d/color-functions
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:207:10:
+      207 │   @return mix(white, $color, $weight);
+          ╵           ^
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use color.mix instead.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    node_modules/bootstrap/scss/_functions.scss:212:10:
+      212 │   @return mix(black, $color, $weight);
+          ╵           ^
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use color.mix instead.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/sass/_theme-core.scss:41:17:
+      41 │ $erp-random: rgb(random(255), random(255), random(255));
+         ╵                  ^
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use math.random instead.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/sass/_theme-core.scss:41:30:
+      41 │ $erp-random: rgb(random(255), random(255), random(255));
+         ╵                               ^
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use math.random instead.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/sass/_theme-core.scss:41:43:
+      41 │ $erp-random: rgb(random(255), random(255), random(255));
+         ╵                                            ^
+
+
+  Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+  Use math.random instead.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/styles.scss:14:8:
+      14 │ @import "../node_modules/bootstrap/scss/functions";
+         ╵         ^
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/styles.scss:17:8:
+      17 │ @import "./sass/theme-core";
+         ╵         ^
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/styles.scss:20:8:
+      20 │ @import "../node_modules/bootstrap/scss/variables";
+         ╵         ^
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/styles.scss:23:8:
+      23 │ @import "./sass/theme-extra";
+         ╵         ^
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] Deprecation [plugin angular-sass]
+
+    src/styles.scss:26:8:
+      26 │ @import "../node_modules/bootstrap/scss/mixins";
+         ╵         ^
+
+
+  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+  More info and automated migrator: https://sass-lang.com/d/import
+
+  The plugin "angular-sass" was triggered by this import
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] Undefined variable.
+    ╷
+583 │         $utilities-text-colors,
+    │         ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  node_modules\bootstrap\scss\_utilities.scss 583:9  @import
+  src\styles.scss 29:9                               root stylesheet [plugin angular-sass]
+
+    angular:styles/global:styles:3:8:
+      3 │ @import 'src/styles.scss';
+        ╵         ~~~~~~~~~~~~~~~~~
+
+
+Watch mode enabled. Watching for file changes...
+
+
